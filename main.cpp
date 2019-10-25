@@ -3,5 +3,6 @@
 #include "CAlmacen.h"
 int main() {
 
+
     return 0;
 }
