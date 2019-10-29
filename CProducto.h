@@ -2,11 +2,12 @@
 #define PROYECTOC___CPRODUCTO_H
 class CProducto {
 private:
-  nombre nombre_producto;
-  nombre tipo_producto;
-  nombre tamaño_producto;
-  nombre peso_producto;
 
+  string tipo_producto;
+  string nombre_producto;
+  entero tamaño_producto;
+  entero peso_producto;
+public:
 };
 
 
