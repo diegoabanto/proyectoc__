@@ -1,6 +1,9 @@
 #include "funciones.h"
 #include "CRobot.h"
 #include "CAlmacen.h"
+#include "COrden.h"
+#include "CSlot.h"
+#include "CProducto.h"
 int main() {
     positivo numero_robots;
     vector<vector<positivo>> posiciones_origen;
