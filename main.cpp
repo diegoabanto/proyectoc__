@@ -4,6 +4,7 @@
 #include "COrden.h"
 #include "CSlot.h"
 #include "CProducto.h"
+#include<vector>
 int main() {
     positivo numero_robots;
     vector<vector<positivo>> posiciones_origen;
