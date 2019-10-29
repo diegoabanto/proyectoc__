@@ -3,8 +3,8 @@
 class CProducto {
 private:
 
-  string tipo_producto;
-  string nombre_producto;
+  texto tipo_producto;
+  texto nombre_producto;
   entero tamaño_producto;
   entero peso_producto;
 public:
