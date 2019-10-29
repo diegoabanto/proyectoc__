@@ -15,5 +15,6 @@ typedef size_t positivo;
 typedef void normal;
 typedef string texto;
 vector<texto> lectura();
+typedef char nombre;
 
 #endif //PROYECTOC___FUNCIONES_H
