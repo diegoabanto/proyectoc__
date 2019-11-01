@@ -17,11 +17,16 @@ public:
     CRobot(CRobot &robot);
     normal ingresar();
     normal retirar();
-    positivo get_numero(){return numero;};
-    vector<positivo> get_origen(){return origen;};
-    vector<positivo> get_destino(){return destino;};
-    texto get_producto(){return producto;};
-    texto get_operacion(){ return operacion;};
+    positivo get_numero(){
+      return numero;};
+    vector<positivo> get_origen(){
+      return origen;};
+    vector<positivo> get_destino(){
+      return destino;};
+    texto get_producto(){
+      return producto;};
+    texto get_operacion(){ 
+      return operacion;};
 
 };
 
