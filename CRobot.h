@@ -15,8 +15,12 @@ public:
     CRobot();
     CRobot(positivo numero, vector<positivo> origen, vector<positivo> destino, texto producto, texto oprecion);
     CRobot(CRobot &robot);
-    normal ingresar();
-    normal retirar();
+    normal ejercutarRuta();
+    normal MoverseVerticalmente();
+    normal MoverseHorizontalmente();
+    normal LlevarProducto();
+    normal RegresarHome();
+
     positivo get_numero(){
       return numero;};
     vector<positivo> get_origen(){
