@@ -10,7 +10,7 @@ class CAlmacen {
 private:
     positivo filas, columnas, numero_robots;
 public:
-    CAlmacen(positivo fil, positivo col, positivo n_robots);
+    CAlmacen(positivo& fil, positivo& col, positivo& n_robots);
     positivo get_filas(){ return filas;};
     vector<vector<positivo>> creacion_matriz();
     positivo get_numero_robots(){return numero_robots;};

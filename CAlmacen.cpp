@@ -1,7 +1,7 @@
 #include "CAlmacen.h"
 #include "funciones.h"
 
-CAlmacen::CAlmacen(positivo fil, positivo col, positivo n_robots): filas{fil},columnas{col}, numero_robots{n_robots}{
+CAlmacen::CAlmacen(positivo& fil, positivo& col, positivo& n_robots): filas{fil},columnas{col}, numero_robots{n_robots}{
 }
 
 vector<vector<positivo>> CAlmacen::creacion_matriz() {
