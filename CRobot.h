@@ -9,11 +9,14 @@ private:
     positivo numero;
     vector<positivo> origen;
 public:
-    CRobot(positivo& numero, vector<positivo> &begin);
-    normal ejercutarRuta();
+    CRobot(positivo& numero);
+    CRobot(vector<positivo> &begin);
     normal MoverseVerticalmenteArriba(CSlot slot_llegada, CAlmacen almacen, CSlot);
-    normal MoverseHorizontalmente();
-    normal LlevarProducto();
+    normal MoverseVerticalmenteAbajo();
+    normal MoverseHorizontalmenteIzquierda();
+    normal MoverseHorizontalmenteDerecha();
+    normal IngresarProducto();
+    normal RecogerProducto();
     normal RegresarHome();
     positivo get_numero(){
       return numero;};

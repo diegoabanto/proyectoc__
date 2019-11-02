@@ -14,7 +14,6 @@ private:
 public:
     normal set_cinstruccion(texto &ope, texto &product, vector<positivo> &dest,positivo &nume_rob, positivo &fil, positivo &col, CAlmacen almacen);
     estado validar_instruccion(CSlot slot_llegada);
-    vector<vector<positivo>> elegir_ruta();
 };
 
 
