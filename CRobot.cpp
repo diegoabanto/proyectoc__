@@ -46,7 +46,6 @@ normal CRobot::RegresarHome(){
 
 }
 
-
 positivo CRobot:: get_numero(){
       return numero;}
 vector<positivo> get_origen(){
