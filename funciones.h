@@ -16,5 +16,6 @@ typedef void normal;
 typedef string texto;
 vector<texto> lectura();
 typedef char nombre;
+typedef bool estado;
 
 #endif //PROYECTOC___FUNCIONES_H
