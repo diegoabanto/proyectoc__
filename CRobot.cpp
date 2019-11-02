@@ -26,10 +26,35 @@ CRobot::CRobot(CRobot &robot) {
 
 }
 
-normal CRobot::ingresar() {
+normal CRobot::ejercutarRuta() {
     cout<<"falta llenar";
 }
 
-normal CRobot::retirar() {
+normal CRobot::MoverseVerticalmente() {
     cout<<"falta llenar";
 }
+
+normal CRobot::MoverseHorizontalmente(){
+
+}
+
+normal CRobot::LlevarProducto(){
+
+}
+
+normal CRobot::RegresarHome(){
+
+}
+
+positivo CRobot::get_numero(){
+  return numero;
+}
+
+vector<positivo> get_origen(){
+      return origen;};
+vector<positivo> get_destino(){
+  return destino;};
+texto get_producto(){
+      return producto;};
+texto get_operacion(){ 
+      return operacion;};
