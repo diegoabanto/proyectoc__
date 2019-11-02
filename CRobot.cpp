@@ -2,13 +2,10 @@
 #include "funciones.h"
 
 CRobot::CRobot() {
-    numero = 0;
-    origen = {0,0};
-    destino = {0,0};
 }
 
 CRobot::CRobot(positivo num, vector<positivo> begin, vector<positivo> finish, texto product, texto operation) {
-    //no seria lo mismo?
+
     numero = num;
     origen = begin;
     destino = finish;
@@ -17,7 +14,7 @@ CRobot::CRobot(positivo num, vector<positivo> begin, vector<positivo> finish, te
 }
 
 CRobot::CRobot(CRobot &robot) {
-    //no seria lo mismo?
+  
     numero = robot.numero;
     origen = robot.origen;
     destino = robot.destino;
