@@ -1,3 +1,4 @@
+  
 #ifndef PROYECTOC___CSLOT_H
 #define PROYECTOC___CSLOT_H
 
@@ -5,7 +6,12 @@
 class CSlot {
 private:
     texto objeto_almacenado;
+    positivo cantidad;
 public:
+    CSlot();
+    normal SubirProducto();
+    normal UbicarProducto();
+
 };
 
 
