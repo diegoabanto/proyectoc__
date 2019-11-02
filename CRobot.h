@@ -20,7 +20,6 @@ public:
     normal MoverseHorizontalmente();
     normal LlevarProducto();
     normal RegresarHome();
-
     positivo get_numero(){
       return numero;};
     vector<positivo> get_origen(){
