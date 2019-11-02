@@ -8,17 +8,12 @@
 #include "funciones.h"
 class CAlmacen {
 private:
-    positivo filas, columnas;
-    string producto_almacenado;
-    positivo cantidad_producto;
+    positivo filas, columnas, numero_robots;
 public:
-    CAlmacen();
-    CAlmacen(positivo filas, positivo columnas, string producto_almacenado, positivo cantidad_producto);
-    positivo get_filas(){return filas;};
-    positivo get_columnas(){return columnas;};
-    string get_producto_almacenado(){ return producto_almacenado;};
-    positivo get_cantidad_producto(){ return cantidad_producto;};
-
+    CAlmacen(positivo fil, positivo col, positivo n_robots);
+    positivo get_filas(){ return filas;};
+    vector<vector<positivo>> creacion_matriz();
+    positivo get_numero_robots(){return numero_robots;};
 };
 
 

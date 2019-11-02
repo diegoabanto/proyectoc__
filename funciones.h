@@ -8,7 +8,7 @@
 #include <fstream>
 #include <cstdlib>
 using namespace std;
-typedef int entero;
+typedef size_t range;
 typedef ifstream entrada;
 typedef double decimal;
 typedef size_t positivo;

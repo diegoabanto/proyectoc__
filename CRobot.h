@@ -2,19 +2,14 @@
 #define PROYECTOC___CROBOT_H
 
 #include "funciones.h"
+#include "CInstruccion.h"
+
 class CRobot {
 private:
     positivo numero;
     vector<positivo> origen;
-    vector<positivo> destino;
-    texto producto;
-    texto operacion;
-
-
 public:
-    CRobot();
-    CRobot(positivo numero, vector<positivo> origen, vector<positivo> destino, texto producto, texto oprecion);
-    CRobot(CRobot &robot);
+    CRobot(positivo numero, vector<positivo> &begin);
     normal ejercutarRuta();
     normal MoverseVerticalmente();
     normal MoverseHorizontalmente();
@@ -24,12 +19,7 @@ public:
       return numero;};
     vector<positivo> get_origen(){
       return origen;};
-    vector<positivo> get_destino(){
-      return destino;};
-    texto get_producto(){
-      return producto;};
-    texto get_operacion(){ 
-      return operacion;};
+
 
 };
 

@@ -1,15 +1,13 @@
 #include "CAlmacen.h"
 #include "funciones.h"
 
-CAlmacen::CAlmacen(){
-    filas = 0;
-    columnas = 0;
-    cantidad_producto = 0;
+CAlmacen::CAlmacen(positivo fil, positivo col, positivo n_robots): filas{fil},columnas{col}, numero_robots{n_robots}{
 }
 
-CAlmacen::CAlmacen(positivo rows, positivo columns, string stored_product, positivo amount_product){
-    filas = rows;
-    columnas = columns;
-    cantidad_producto = amount_product;
-    producto_almacenado = stored_product;
+vector<vector<positivo>> CAlmacen::creacion_matriz() {
+    vector<vector<positivo>> matriz(filas);
+    for(range i = 0 ; i < matriz.size()-1; i++){
+        matriz[i] = vector<positivo>(columnas);
+    }
+    return matriz;
 }
