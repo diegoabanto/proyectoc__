@@ -1,12 +1,16 @@
 #include "CSlot.h"
-normal CSlot::definir_slot(CProducto &product, positivo& cant, positivo& cantmax, vector<positivo>& pos, positivo& fil, positivo& col) { //se definen atributos
-    if( pos[0] < fil && pos[1] < col){
-        posicion = pos;
-        objeto_almacenado = product;
-        cantidad = cant;
-        aforo_maximo = cantmax;
-    }
+
+CSlot::CSlot(vector<positivo> &pos) {
+    posicion = pos;
 }
+
+normal CSlot::definir_slot(CProducto &product, positivo& cant, positivo& cantmax, estado have_robot, CRobot robot1){//se definen atributos
+    objeto_almacenado = product.get_tipo_producto();
+    cantidad = cant;
+    aforo_maximo = cantmax;
+    presenta_robot = posicion == robot1.get_origen();
+}
+
 
 positivo CSlot::actualizar_cantidad(estado& state) {
     if(cantidad < aforo_maximo && state != 0){

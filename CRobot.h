@@ -9,9 +9,9 @@ private:
     positivo numero;
     vector<positivo> origen;
 public:
-    CRobot(positivo numero, vector<positivo> &begin);
+    CRobot(positivo& numero, vector<positivo> &begin);
     normal ejercutarRuta();
-    normal MoverseVerticalmente();
+    normal MoverseVerticalmenteArriba(CSlot slot_llegada, CAlmacen almacen, CSlot);
     normal MoverseHorizontalmente();
     normal LlevarProducto();
     normal RegresarHome();

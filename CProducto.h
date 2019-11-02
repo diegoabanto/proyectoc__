@@ -6,7 +6,7 @@ class CProducto {
 private:
   texto tipo_producto;
 public:
-    CProducto(texto &product);
+    CProducto(texto product);
     texto get_tipo_producto(){return tipo_producto;};
 };
 
