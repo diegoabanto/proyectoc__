@@ -1,7 +1,7 @@
 #include "funciones.h"
 #include "CRobot.h"
 #include "CAlmacen.h"
-#include "COrden.h"
+#include "CInstruccion.h"
 #include "CSlot.h"
 #include "CProducto.h"
 #include<vector>
