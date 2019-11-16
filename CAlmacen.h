@@ -13,7 +13,9 @@ public:
     CAlmacen(positivo& fil, positivo& col, positivo& n_robots);
     positivo get_filas(){ return filas;};
     vector<vector<positivo>> creacion_matriz();
+    //Intentar setear la matriz con un array de arrays
     positivo get_numero_robots(){return numero_robots;};
+    bool slot_empty();
 };
 
 

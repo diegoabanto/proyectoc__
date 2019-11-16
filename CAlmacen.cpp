@@ -10,4 +10,22 @@ vector<vector<positivo>> CAlmacen::creacion_matriz() {
         matriz[i] = vector<positivo>(columnas);
     }
     return matriz;
+    //Probar
 }
+
+bool CAlmacen::slot_empty() {
+    auto matriznueva = creacion_matriz();
+    for(auto it = matriznueva.begin(); it!= matriznueva.end();it++ ){
+        if((it)->empty()){
+            return true;
+        }
+        else return false;
+    }
+}
+
+
+
+
+
+
+

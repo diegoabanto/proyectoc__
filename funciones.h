@@ -14,7 +14,7 @@ typedef double decimal;
 typedef size_t positivo;
 typedef void normal;
 typedef string texto;
-vector<texto> lectura();
+vector<texto> lectura(); //Funcion de lectura mal definida, no recomendable trabajar con vector
 typedef char nombre;
 typedef bool estado;
 

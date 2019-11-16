@@ -18,7 +18,7 @@ public:
     normal definir_slot(CProducto &product, positivo& cant, positivo& cantmax, estado have_robot, CRobot robot1);
     positivo actualizar_cantidad(estado& state);
     texto get_productoalmacenado(){return objeto_almacenado.get_tipo_producto();};
-    vector<positivo> get_posicion(){return posicion;};
+    vector<positivo> get_posicion(){return posicion;}; //Si es posible, trabajarlo con arrays
     estado get_presenta_robot(){ return presenta_robot;};
 };
 
