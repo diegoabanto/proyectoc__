@@ -17,4 +17,12 @@ normal CRobot::MoverseVerticalmenteAbajo(CSlot slot_llegada, CAlmacen almacen, C
 
 }
 
+normal CRobot::MoverseHorizontalmenteDerecha(CSlot slot_llegada, CAlmacen almacen, CSlot){
+
+}
+
+normal CRobot::MoverseHorizontalmenteIzquierda(CSlot slot_llegada, CAlmacen almacen, CSlot){
+  
+}
+
 
