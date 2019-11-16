@@ -12,9 +12,9 @@ public:
     CRobot(positivo& numero);
     CRobot(vector<positivo> &begin);
     normal MoverseVerticalmenteArriba(CSlot slot_llegada, CAlmacen almacen, CSlot);
-    normal MoverseVerticalmenteAbajo();
-    normal MoverseHorizontalmenteIzquierda();
-    normal MoverseHorizontalmenteDerecha();
+    normal MoverseVerticalmenteAbajo(CSlot slot_llegada, CAlmacen almacen, CSlot);
+    normal MoverseHorizontalmenteIzquierda(CSlot slot_llegada, CAlmacen almacen, CSlot);
+    normal MoverseHorizontalmenteDerecha(CSlot slot_llegada, CAlmacen almacen, CSlot);
     normal IngresarProducto();
     normal RecogerProducto();
     normal RegresarHome();
