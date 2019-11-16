@@ -23,20 +23,6 @@ public:
     vector<positivo> get_origen(){
       return origen;};
 };
-class CPersona{
-private:
-    string sexo;
-public:
-    CPersona(string x);
-protected:
-    string nombre;
-    int edad;
-};
-class hijo: public CPersona{
-private:
-    string codigo;
-public:
-    hijo(string sdsds);
-};
+
 
 #endif //PROYECTOC___CROBOT_H
