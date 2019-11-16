@@ -8,11 +8,4 @@ CRobot::CRobot(vector<positivo> &begin) {
 }
 
 
-normal CRobot::MoverseVerticalmenteArriba(CSlot slot_llegada, CAlmacen almacen, CSlot) {
-
-}
-
-
-
-
 
