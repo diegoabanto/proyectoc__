@@ -14,8 +14,8 @@ private:
     CAlmacen almacen;
 
 public:
-    CRobot(positivo& numero){ this numero->numero};
-    CRobot(vector<positivo> &begin){ origen = begin};
+    CRobot(positivo& numero){ this numero->numero;};
+    CRobot(vector<positivo> &begin){ origen = begin;};
 
     /* normal MoverseVerticalmenteArriba(CSlot m_slot_llegada, CAlmacen m_almacen, CSlot);
     normal MoverseVerticalmenteAbajo(CSlot m_slot_llegada, CAlmacen m_almacen, CSlot);
