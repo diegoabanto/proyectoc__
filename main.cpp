@@ -4,7 +4,6 @@
 #include "CInstruccion.h"
 #include "CSlot.h"
 #include "CProducto.h"
-#include<vector>
 
 int main(){
     positivo filas = 0, columnas = 0, numero_robots = 1;
