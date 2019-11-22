@@ -3,7 +3,7 @@
 #include "CRobot.h"
 #include "CSlot.h"
 
-CRobot::CRobot(positivo& num) {
+/* CRobot::CRobot(positivo& num) {
     numero = num;
 
 }
@@ -44,3 +44,4 @@ normal CRobot::RegresarHome(CSlot m_slot_llegada, CAlmacen m_almacen, CSlot) {
     slot_llegada=m_slot_llegada;
     almacen=m_almacen;
 }
+*/

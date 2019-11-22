@@ -14,16 +14,16 @@ private:
     CAlmacen almacen;
 
 public:
-    CRobot(positivo& numero);
-    CRobot(vector<positivo> &begin);
+    CRobot(positivo& numero){ this numero->numero};
+    CRobot(vector<positivo> &begin){ origen = begin};
 
-    normal MoverseVerticalmenteArriba(CSlot m_slot_llegada, CAlmacen m_almacen, CSlot);
+    /* normal MoverseVerticalmenteArriba(CSlot m_slot_llegada, CAlmacen m_almacen, CSlot);
     normal MoverseVerticalmenteAbajo(CSlot m_slot_llegada, CAlmacen m_almacen, CSlot);
     normal MoverseHorizontalmenteIzquierda(CSlot m_slot_llegada, CAlmacen m_almacen, CSlot);
     normal MoverseHorizontalmenteDerecha(CSlot m_slot_llegada, CAlmacen m_almacen, CSlot);
     normal IngresarProducto();
     normal RecogerProducto(CSlot m_slot_llegada, CAlmacen m_almacen, CSlot);
-    normal RegresarHome(CSlot m_slot_llegada, CAlmacen m_almacen, CSlot);
+    normal RegresarHome(CSlot m_slot_llegada, CAlmacen m_almacen, CSlot); */
     positivo get_numero(){
       return numero;};
 
