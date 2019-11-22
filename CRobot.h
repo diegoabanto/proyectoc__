@@ -8,21 +8,34 @@ class CRobot {
 private:
     positivo numero;
     vector<positivo> origen;
+    texto operacion;
+    texto productos;
+    CSlot slot_llegada;
+    CAlmacen almacen;
+
 public:
     CRobot(positivo& numero);
     CRobot(vector<positivo> &begin);
-    normal MoverseVerticalmenteArriba(CSlot slot_llegada, CAlmacen almacen, CSlot);
-    normal MoverseVerticalmenteAbajo(CSlot slot_llegada, CAlmacen almacen, CSlot);
-    normal MoverseHorizontalmenteIzquierda(CSlot slot_llegada, CAlmacen almacen, CSlot);
-    normal MoverseHorizontalmenteDerecha(CSlot slot_llegada, CAlmacen almacen, CSlot);
+
+    normal MoverseVerticalmenteArriba(CSlot m_slot_llegada, CAlmacen m_almacen, CSlot);
+    normal MoverseVerticalmenteAbajo(CSlot m_slot_llegada, CAlmacen m_almacen, CSlot);
+    normal MoverseHorizontalmenteIzquierda(CSlot m_slot_llegada, CAlmacen m_almacen, CSlot);
+    normal MoverseHorizontalmenteDerecha(CSlot m_slot_llegada, CAlmacen m_almacen, CSlot);
     normal IngresarProducto();
-    normal RecogerProducto();
-    normal RegresarHome();
+    normal RecogerProducto(CSlot m_slot_llegada, CAlmacen m_almacen, CSlot);
+    normal RegresarHome(CSlot m_slot_llegada, CAlmacen m_almacen, CSlot);
     positivo get_numero(){
       return numero;};
+
     vector<positivo> get_origen(){
       return origen;};
+
+    texto get_operacion(){
+        return operacion;};
+    texto get_productos(){
+        return productos;};
 };
 
 
 #endif //PROYECTOC___CROBOT_H
+
