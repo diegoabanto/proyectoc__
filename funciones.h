@@ -14,8 +14,12 @@ typedef double decimal;
 typedef size_t positivo;
 typedef void normal;
 typedef string texto;
-vector<texto> lectura(); //Funcion de lectura mal definida, no recomendable trabajar con vector
 typedef char nombre;
 typedef bool estado;
+//vector<texto> lectura(); //Funcion de lectura mal definida, no recomendable trabajar con vector
+normal obtencion_de_datos(positivo &filas, positivo &columnas, positivo &numero_robots);
+positivo opcion_generacion_menu();
+
+
 
 #endif //PROYECTOC___FUNCIONES_H
