@@ -5,15 +5,14 @@
 #include "CSlot.h"
 #include "CProducto.h"
 
-int main(){
+int main() {
     positivo filas = 0, columnas = 0, numero_robots = 1;
     obtencion_de_datos(filas, columnas, numero_robots);
     CAlmacen warehouse(filas, columnas, numero_robots);
     vector<vector<positivo>> matriz_coordenadas = warehouse.creacion_matriz();
     opcion_generacion_menu();
-
-
-
+    return 0;
+}
 
 
 
