@@ -1,13 +1,19 @@
 #include "Controlador.h"
+//ESCRITURA DE ARCHIVOS
+#include <iostream>
+#include <fstream>
+
+//Creamo y leemos el archivo
+
 
 normal Controlador::input_robots(istream &in, ostream& os){
-    entero n;
+    int n;
     os << "Numero de robots: ";
     in >> n;
 
-    for (entero i=0; i<n; i++){
+    for (int i=0; i<n; i++){
         // Declarar variables a utilizar
-        entero origen1, origen2;
+        int origen1, origen2;
 
         // Pedir datos
         os << "Origen del robot: " << i << " (fila columna): ";
@@ -19,41 +25,47 @@ normal Controlador::input_robots(istream &in, ostream& os){
     }
 }
 
-normal Controlador::input_instrucciones(istream &in, ostream& out){
-    entero n;
-    out << endl << "Numero de instrucciones: ";
-    in >> n;
+normal Controlador::input_instrucciones(){
+    int n;
+    cout << endl << "Numero de instrucciones: ";
+    cin >> n;
+    ofstream archivo_escribir;
 
-    for (entero i=0; i<n; i++){
+    archivo_escribir.open("prueba.txt");
+    for (int i=0; i<n; i++){
         // Declarar variables a utilizar
-        entero num_robot, destino_fila, destino_col, cantidad;
-        texto operacion, producto;
+        int num_robot, destino_fila, destino_col, cantidad;
+        string operacion, producto;
 
-        out << endl << "Instruccion: " << i << endl;
+        cout << endl << "Instruccion #" << i << endl;
 
         // Pedir datos
-        out << "Numero de robot: ";
-        in >> num_robot;
-        out << "Operacion: ";
-        in >> operacion;
-        out << "Destino (fila columna): ";
-        in >> destino_fila >> destino_col;
-        out << "Producto (tipo): ";
-        in >> producto;
-        out << "Producto (cantidad): ";
-        in >> cantidad;
-
+        cout << "Numero de robot: ";
+        cin >> num_robot;
+        cout << "Operacion: ";
+        cin >> operacion;
+        cout << "Destino (fila columna): ";
+        cin >> destino_fila >> destino_col;
+        cout << "Producto (tipo): ";
+        cin >> producto;
+        cout << "Producto (cantidad): ";
+        cin >> cantidad;
+        archivo_escribir<<"El robot: "<<num_robot+1<<" se dirige a la posicion :\n";
+        archivo_escribir<<"Fila : "<< destino_fila<<"\n"<<"Columna : "<< destino_col<<"\n";
+        archivo_escribir<<"Accion: "<< operacion<< " de "<< cantidad << " "<<producto<< "\n";
         Instruccion instruccion(i, operacion, destino_fila, destino_col, producto, cantidad);
         robots[num_robot].agregarInstruccion(instruccion);
     }
+    archivo_escribir.close();
 }
 
 normal Controlador::ejecutar_instrucciones(){
-    booleano instCompletadas;
+    bool instCompletadas;
     do{
         instCompletadas = true;
-        for (entero i=0; i<robots.size(); i++){
-            instCompletadas = instCompletadas && robots[i].siguienteInstruccion(cin, cout);
+        for (int i=0; i<robots.size(); i++){
+            instCompletadas = instCompletadas && robots[i].siguienteInstruccion();
         }
     } while (!instCompletadas);
+
 }
