@@ -16,7 +16,7 @@ normal Robot::agregarInstruccion(Instruccion instruccion){
 }
 
 // Movimiento
-bool Robot::moverse(int dest1, int dest2){ // y x
+booleano Robot::moverse(entero dest1, entero dest2){ // y x
     almacen->desmarcarRobot(coordActual[0], coordActual[1]); // borrar la marca actual porque se actualizara despues
 
     coordActual[0] = dest1;
@@ -26,18 +26,18 @@ bool Robot::moverse(int dest1, int dest2){ // y x
     return true;
 }
 
-bool Robot::siguienteInstruccion(){
+booleano Robot::siguienteInstruccion(){
     if (termino()){
         return true;
     }
 
     string operacionIns = instrucciones[proximaInstruccion].operacion;
-    int destinoIns[2] = {
+    entero destinoIns[2] = {
             instrucciones[proximaInstruccion].destino[0],
             instrucciones[proximaInstruccion].destino[1]
     };
     string productoIns = instrucciones[proximaInstruccion].producto;
-    int productoCant = instrucciones[proximaInstruccion].cantidad;
+    entero productoCant = instrucciones[proximaInstruccion].cantidad;
 
 
     // volver al origen si hay algun paquete que dejar
@@ -78,6 +78,6 @@ bool Robot::siguienteInstruccion(){
 }
 
 
-bool Robot::termino(){
+booleano Robot::termino(){
     return instrucciones.empty() || proximaInstruccion >= instrucciones.size();
 }

@@ -17,6 +17,7 @@ typedef void normal;
 typedef string texto;
 typedef char nombre;
 typedef bool estado;
+typedef bool booleano;
 
 
 

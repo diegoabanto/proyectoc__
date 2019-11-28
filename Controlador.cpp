@@ -49,7 +49,7 @@ normal Controlador::input_instrucciones(istream &in, ostream& out){
 }
 
 normal Controlador::ejecutar_instrucciones(){
-    estado instCompletadas;
+    booleano instCompletadas;
     do{
         instCompletadas = true;
         for (entero i=0; i<robots.size(); i++){
