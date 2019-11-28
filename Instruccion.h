@@ -6,12 +6,12 @@
 class Instruccion{
 public:
     entero numero;
-    string operacion;
+    texto operacion;
     entero destino[2];
-    string producto;
+    texto producto;
     entero cantidad;
 
-    Instruccion(entero _numero, string &_operacion, entero coord1_dest, entero coord2_dest, string &producto, entero _cantidad);
+    Instruccion(entero _numero, texto &_operacion, entero coord1_dest, entero coord2_dest, texto &producto, entero _cantidad);
 };
 
 

@@ -1,13 +1,13 @@
 #include "Controlador.h"
 
 normal Controlador::input_robots(istream &in, ostream& os){
-    int n;
+    entero n;
     os << "Numero de robots: ";
     in >> n;
 
-    for (int i=0; i<n; i++){
+    for (entero i=0; i<n; i++){
         // Declarar variables a utilizar
-        int origen1, origen2;
+        entero origen1, origen2;
 
         // Pedir datos
         os << "Origen del robot: " << i << " (fila columna): ";
@@ -29,7 +29,7 @@ normal Controlador::input_instrucciones(istream &in, ostream& out){
         entero num_robot, destino_fila, destino_col, cantidad;
         texto operacion, producto;
 
-        out << endl << "Instruccion #" << i << endl;
+        out << endl << "Instruccion: " << i << endl;
 
         // Pedir datos
         out << "Numero de robot: ";
