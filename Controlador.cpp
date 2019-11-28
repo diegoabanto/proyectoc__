@@ -53,7 +53,7 @@ normal Controlador::ejecutar_instrucciones(){
     do{
         instCompletadas = true;
         for (entero i=0; i<robots.size(); i++){
-            instCompletadas = instCompletadas && robots[i].siguienteInstruccion();
+            instCompletadas = instCompletadas && robots[i].siguienteInstruccion(cin, cout);
         }
     } while (!instCompletadas);
 }

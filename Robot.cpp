@@ -26,17 +26,17 @@ booleano Robot::moverse(entero dest1, entero dest2){ // y x
     return true;
 }
 
-booleano Robot::siguienteInstruccion(){
+booleano Robot::siguienteInstruccion(istream &in, ostream& out){
     if (termino()){
         return true;
     }
 
-    string operacionIns = instrucciones[proximaInstruccion].operacion;
+    texto operacionIns = instrucciones[proximaInstruccion].operacion;
     entero destinoIns[2] = {
             instrucciones[proximaInstruccion].destino[0],
             instrucciones[proximaInstruccion].destino[1]
     };
-    string productoIns = instrucciones[proximaInstruccion].producto;
+    texto productoIns = instrucciones[proximaInstruccion].producto;
     entero productoCant = instrucciones[proximaInstruccion].cantidad;
 
 
@@ -66,11 +66,11 @@ booleano Robot::siguienteInstruccion(){
         moverse(origen[0], origen[1]);
     }
 
-    cout << "Se ejecuto la instruccion #" << instrucciones[proximaInstruccion].numero << endl;
+    out << "Se ejecuto la instruccion #" << instrucciones[proximaInstruccion].numero << endl;
     proximaInstruccion++;
 
     if (termino()){ // volver a home
-        cout << "Robot volviendo a home" << endl;
+        out << "Robot volviendo a home" << endl;
         moverse(origen[0], origen[1]);
         estado = "home";
     }
