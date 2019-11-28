@@ -10,13 +10,10 @@
 using namespace std;
 typedef size_t range;
 typedef int entero;
-typedef ifstream entrada;
 typedef double decimal;
 typedef size_t positivo;
 typedef void normal;
 typedef string texto;
-typedef char nombre;
-typedef bool estado;
 typedef bool booleano;
 
 
