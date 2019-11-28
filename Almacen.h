@@ -25,7 +25,7 @@ public:
     entero getFilas();
     entero getColumnas();
 
-    normal ingresarProducto(entero coord1, entero coord2, texto producto, entero cantidad);
+    normal ingresarProducto(entero coord1, entero coord2, texto &_producto, entero cantidad);
     normal retirarProducto(entero coord1, entero coord2, entero cantidad);
 
     normal marcarRobot(entero num_robot, entero coord1, entero coord2);

@@ -52,7 +52,7 @@ normal Controlador::ejecutar_instrucciones(){
     estado instCompletadas;
     do{
         instCompletadas = true;
-        for (int i=0; i<robots.size(); i++){
+        for (entero i=0; i<robots.size(); i++){
             instCompletadas = instCompletadas && robots[i].siguienteInstruccion();
         }
     } while (!instCompletadas);

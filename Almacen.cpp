@@ -28,8 +28,8 @@ entero Almacen::getColumnas(){
 }
 
 // Modificar slots
-normal Almacen::ingresarProducto(entero coord1, entero coord2, string producto, entero cantidad){
-    slots[coord1][coord2].producto = producto;
+normal Almacen::ingresarProducto(entero coord1, entero coord2, texto &_producto, entero cantidad){
+    slots[coord1][coord2].producto = _producto;
     slots[coord1][coord2].cantidad += cantidad;
 }
 
