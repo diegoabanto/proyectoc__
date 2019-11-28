@@ -12,7 +12,7 @@ private:
     vector<Robot> robots;
 public:
     normal input_robots(istream &in, ostream& os);
-    normal input_instrucciones();
+    normal input_instrucciones(istream &in, ostream& out);
     normal ejecutar_instrucciones();
 };
 
