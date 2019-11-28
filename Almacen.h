@@ -8,8 +8,8 @@
 using namespace std;
 
 // Dimensiones del almacen
-const int f = 5;
-const int c = 5;
+const entero f = 5;
+const entero c = 5;
 
 class Almacen{
 private:
@@ -25,11 +25,11 @@ public:
     entero getFilas();
     entero getColumnas();
 
-    normal ingresarProducto(int coord1, int coord2, string producto, int cantidad);
-    normal retirarProducto(int coord1, int coord2, int cantidad);
+    normal ingresarProducto(entero coord1, entero coord2, texto producto, entero cantidad);
+    normal retirarProducto(entero coord1, entero coord2, entero cantidad);
 
-    normal marcarRobot(int num_robot, int coord1, int coord2);
-    normal desmarcarRobot(int coord1, int coord2);
+    normal marcarRobot(entero num_robot, entero coord1, entero coord2);
+    normal desmarcarRobot(entero coord1, entero coord2);
 };
 
 
