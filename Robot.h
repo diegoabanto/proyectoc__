@@ -1,7 +1,3 @@
-//
-// Created by Asus on 27/11/2019.
-//
-
 #ifndef PROYECTOC___ROBOT_H
 #define PROYECTOC___ROBOT_H
 

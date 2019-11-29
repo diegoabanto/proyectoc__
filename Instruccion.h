@@ -5,7 +5,7 @@
 
 class Instruccion{
 public:
-    entero numero;
+    entero numero; //numero de instruccion
     texto operacion;
     entero destino[2];
     texto producto;
