@@ -6,11 +6,12 @@
 class Instruccion{
 public:
     entero numero; //numero de instruccion
-    texto operacion;
-    entero destino[2];
-    texto producto;
-    entero cantidad;
+    texto operacion; //operacion a realizar
+    entero destino[2]; //array de tamaño 2
+    texto producto; //producto a recoger o dejar
+    entero cantidad; // cantidad del producto a recoger o dejar
 
+    //constructor
     Instruccion(entero _numero, texto &_operacion, entero coord1_dest, entero coord2_dest, texto &producto, entero _cantidad);
 };
 
