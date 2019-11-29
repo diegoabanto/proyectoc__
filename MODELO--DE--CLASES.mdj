@@ -818,7 +818,7 @@
 											"top": 324,
 											"width": 263,
 											"height": 13,
-											"text": "+entero coordActual[2]",
+											"text": "-entero coordActual[2]",
 											"horizontalAlignment": 0
 										},
 										{
@@ -835,7 +835,7 @@
 											"top": 339,
 											"width": 263,
 											"height": 13,
-											"text": "+texto estado",
+											"text": "-texto estado",
 											"horizontalAlignment": 0
 										},
 										{
@@ -852,7 +852,7 @@
 											"top": 354,
 											"width": 263,
 											"height": 13,
-											"text": "+Almace* almacen",
+											"text": "-Almacen* almacen",
 											"horizontalAlignment": 0
 										},
 										{
@@ -869,7 +869,7 @@
 											"top": 369,
 											"width": 263,
 											"height": 13,
-											"text": "+entero proximaInstruccion",
+											"text": "-entero proximaInstruccion",
 											"horizontalAlignment": 0
 										},
 										{
@@ -886,7 +886,7 @@
 											"top": 384,
 											"width": 263,
 											"height": 13,
-											"text": "+booleano moverse",
+											"text": "-booleano moverse",
 											"horizontalAlignment": 0
 										}
 									],
@@ -1447,13 +1447,30 @@
 											"height": 13,
 											"text": "+texto producto()",
 											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+											"_id": "AAAAAAFutP7l5nXv9uA=",
+											"_parent": {
+												"$ref": "AAAAAAFuJBCFFiDXEOw="
+											},
+											"model": {
+												"$ref": "AAAAAAFutP7lo3Xs/mw="
+											},
+											"font": "Arial;13;0",
+											"left": 469,
+											"top": 115,
+											"width": 215,
+											"height": 13,
+											"text": "+entero cantidad()",
+											"horizontalAlignment": 0
 										}
 									],
 									"font": "Arial;13;0",
 									"left": 464,
 									"top": 35,
 									"width": 225,
-									"height": 83
+									"height": 98
 								},
 								{
 									"_type": "UMLReceptionCompartmentView",
@@ -1549,6 +1566,7 @@
 									"model": {
 										"$ref": "AAAAAAFurh1mhHZBEos="
 									},
+									"visible": null,
 									"font": "Arial;13;0",
 									"left": 400,
 									"top": 327,
@@ -3325,6 +3343,7 @@
 								"$ref": "AAAAAAFuJA7ZUyB6rcY="
 							},
 							"name": "entero coordActual[2]",
+							"visibility": "private",
 							"type": ""
 						},
 						{
@@ -3333,7 +3352,8 @@
 							"_parent": {
 								"$ref": "AAAAAAFuJA7ZUyB6rcY="
 							},
-							"name": "texto estado"
+							"name": "texto estado",
+							"visibility": "private"
 						},
 						{
 							"_type": "UMLAttribute",
@@ -3341,8 +3361,8 @@
 							"_parent": {
 								"$ref": "AAAAAAFuJA7ZUyB6rcY="
 							},
-							"name": "Almace* almacen",
-							"type": ""
+							"name": "Almacen* almacen",
+							"visibility": "private"
 						},
 						{
 							"_type": "UMLAttribute",
@@ -3351,6 +3371,7 @@
 								"$ref": "AAAAAAFuJA7ZUyB6rcY="
 							},
 							"name": "entero proximaInstruccion",
+							"visibility": "private",
 							"type": ""
 						},
 						{
@@ -3359,7 +3380,8 @@
 							"_parent": {
 								"$ref": "AAAAAAFuJA7ZUyB6rcY="
 							},
-							"name": "booleano moverse"
+							"name": "booleano moverse",
+							"visibility": "private"
 						}
 					],
 					"operations": [
@@ -3808,6 +3830,14 @@
 								"$ref": "AAAAAAFuJBCFCCDOlDQ="
 							},
 							"name": "texto producto"
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFutP7lo3Xs/mw=",
+							"_parent": {
+								"$ref": "AAAAAAFuJBCFCCDOlDQ="
+							},
+							"name": "entero cantidad"
 						}
 					]
 				}
