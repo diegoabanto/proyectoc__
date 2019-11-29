@@ -9,7 +9,7 @@ int main(){
     cout << "************************* ROBOTS *********************************" << endl;
     controlador.input_robots(cin, cout);
     cout << "********************** INSTRUCCIONES *****************************" << endl;
-    controlador.input_instrucciones(cin, cout);
+    controlador.input_instrucciones(cin,cout);
     cout << "*****************************************************************" << endl;
     controlador.ejecutar_instrucciones();
     return 0;

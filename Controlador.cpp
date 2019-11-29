@@ -25,10 +25,10 @@ normal Controlador::input_robots(istream &in, ostream& os){
     }
 }
 
-normal Controlador::input_instrucciones(){
+normal Controlador::input_instrucciones(std::istream &in, std::ostream& out){
     int n;
-    cout << endl << "Numero de instrucciones: ";
-    cin >> n;
+    out << endl << "Numero de instrucciones: ";
+    in >> n;
     ofstream archivo_escribir;
 
     archivo_escribir.open("prueba.txt");
@@ -37,19 +37,19 @@ normal Controlador::input_instrucciones(){
         int num_robot, destino_fila, destino_col, cantidad;
         string operacion, producto;
 
-        cout << endl << "Instruccion #" << i << endl;
+        out << endl << "Instruccion #" << i << endl;
 
         // Pedir datos
-        cout << "Numero de robot: ";
-        cin >> num_robot;
-        cout << "Operacion: ";
-        cin >> operacion;
-        cout << "Destino (fila columna): ";
-        cin >> destino_fila >> destino_col;
-        cout << "Producto (tipo): ";
-        cin >> producto;
-        cout << "Producto (cantidad): ";
-        cin >> cantidad;
+        out << "Numero de robot: ";
+        in >> num_robot;
+        out << "Operacion: ";
+        in >> operacion;
+        out << "Destino (fila columna): ";
+        in >> destino_fila >> destino_col;
+        out << "Producto (tipo): ";
+        in >> producto;
+        out << "Producto (cantidad): ";
+        in >> cantidad;
         archivo_escribir<<"El robot: "<<num_robot+1<<" se dirige a la posicion :\n";
         archivo_escribir<<"Fila : "<< destino_fila<<"\n"<<"Columna : "<< destino_col<<"\n";
         archivo_escribir<<"Accion: "<< operacion<< " de "<< cantidad << " "<<producto<< "\n";
@@ -60,11 +60,12 @@ normal Controlador::input_instrucciones(){
 }
 
 normal Controlador::ejecutar_instrucciones(){
+
     bool instCompletadas;
     do{
         instCompletadas = true;
         for (int i=0; i<robots.size(); i++){
-            instCompletadas = instCompletadas && robots[i].siguienteInstruccion();
+            instCompletadas = instCompletadas && robots[i].siguienteInstruccion( cin,cout);
         }
     } while (!instCompletadas);
 
