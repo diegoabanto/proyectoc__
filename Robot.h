@@ -6,7 +6,7 @@
 
 class Robot{
 private:
-    entero numero;
+    entero numero; //numero de robot
     entero origen[2];
     entero coordActual[2];
     texto estado; // en tránsito, destino, home
