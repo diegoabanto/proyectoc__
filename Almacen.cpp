@@ -1,5 +1,10 @@
 #include "Almacen.h"
 
+normal Almacen::setfilas_columnas() {
+    filas = f;
+    columnas = c;
+}
+
 // Constructor
 Almacen::Almacen(){
     // Iniciar con un almacen vacio
@@ -18,14 +23,6 @@ Almacen::Almacen(){
     }
 }
 
-// Metodos de acceso
-entero Almacen::getFilas(){
-    return filas;
-}
-
-entero Almacen::getColumnas(){
-    return columnas;
-}
 
 // Modificar slots
 normal Almacen::ingresarProducto(entero coord1, entero coord2, texto &_producto, entero cantidad){
@@ -35,7 +32,9 @@ normal Almacen::ingresarProducto(entero coord1, entero coord2, texto &_producto,
 
 normal Almacen::retirarProducto(entero coord1, entero coord2, entero cantidad){
     slots[coord1][coord2].cantidad -= cantidad;
-    if (slots[coord1][coord2].cantidad==0) {slots[coord1][coord2].producto = "";}
+    if (slots[coord1][coord2].cantidad == 0){
+        slots[coord1][coord2].producto = "";
+    }
 }
 
 

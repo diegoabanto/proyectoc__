@@ -7,24 +7,28 @@
 #include"funciones.h"
 using namespace std;
 
-// Dimensiones del almacen
-const entero f = 5;
-const entero c = 5;
+// Dimensiones del almacen ya definidas
+const entero f = 5; //numero de filas
+const entero c = 5; //numero de columnas
 
 class Almacen{
 private:
-    Slot slots[f][c];
+    Slot slots[f][c]; // creacion de matriz de slots [filas], [columnas]
     entero posRobots[f][c]; // Posiciones de los robots
-    entero filas = f;
-    entero columnas = c;
+    entero filas;
+    entero columnas;
 
 public:
-    Almacen();
-    ~Almacen() = default;
+    Almacen(); //constructor
+    ~Almacen() = default; // destructor por defecto
 
-    entero getFilas();
-    entero getColumnas();
+    normal setfilas_columnas(); //se establece el tamaño de filas y columnas
 
+    //metodos de obtencion de datos
+    entero getFilas(){ return filas;}; //retorna las filas
+    entero getColumnas(){ return columnas;}; //retorna las columnas
+
+    //metodos de acceso
     normal ingresarProducto(entero coord1, entero coord2, texto &_producto, entero cantidad);
     normal retirarProducto(entero coord1, entero coord2, entero cantidad);
 

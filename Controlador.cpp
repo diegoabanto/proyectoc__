@@ -1,19 +1,20 @@
 #include "Controlador.h"
 //ESCRITURA DE ARCHIVOS
-//Creamo y leemos el archivo
+
+//Creamos y leemos el archivo
 
 
 normal Controlador::input_robots(istream &in, ostream& os){
-    int n;
+    entero n; //numero de robots
     os << "Numero de robots: ";
     in >> n;
 
-    for (int i=0; i<n; i++){
-        // Declarar variables a utilizar
-        int origen1, origen2;
+    for (entero i=0; i<n; i++){
+        // coordinadas del origen del robot
+        entero origen1, origen2;
 
         // Pedir datos
-        os << "Origen del robot: " << i << " (fila columna): ";
+        os << "Origen del robot: " << i << " (fila,columna): ";
         in >> origen1 >> origen2;
 
         // Agregar robot
@@ -23,7 +24,7 @@ normal Controlador::input_robots(istream &in, ostream& os){
 }
 
 normal Controlador::input_instrucciones(std::istream &in, std::ostream& out){
-    int n;
+    entero n; //numero de instrucciones
     out << endl << "Numero de instrucciones: ";
     in >> n;
     ofstream archivo_escribir;
