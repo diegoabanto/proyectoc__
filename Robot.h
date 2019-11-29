@@ -23,7 +23,7 @@ public:
 
     normal agregarInstruccion(Instruccion instruccion);
     booleano siguienteInstruccion(istream &in, ostream& os); // devuelve false si hubo colision
-    // true si completo la instruccion o no tiene mas
+                                                             // true si completo la instruccion o no tiene mas
 
     booleano termino();  // devuelve true si termino todas sus instrucciones o si no hay instrucciones
 };

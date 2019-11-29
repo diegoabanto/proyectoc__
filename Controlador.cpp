@@ -41,7 +41,7 @@ normal Controlador::input_instrucciones(std::istream &in, std::ostream& out){
         // Pedir datos
         out << "Numero de robot: "; in >> num_robot;
 
-        out << "Operacion: "; in >> operacion;
+        out << "Operacion (ingreso o retiro): "; in >> operacion;
 
         out << "Destino (fila columna): "; in >> destino_fila >> destino_col;
 

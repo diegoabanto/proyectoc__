@@ -1,5 +1,6 @@
 #include "Robot.h"
 #include "funciones.h"
+
 Robot::Robot(entero _numero, entero _origen1, entero _origen2, Almacen* _almacen){
     numero = _numero;
     origen[0] = _origen1;
