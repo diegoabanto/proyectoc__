@@ -5,8 +5,9 @@
 #include "funciones.h"
 class Slot{
 public:
-    texto producto;
-    entero cantidad = 0;
+    texto producto; //producto que almacena el slot
+    entero cantidad = 0; //como esta en el public si se puede igualar a 0 (al principio)
+
 };
 
 

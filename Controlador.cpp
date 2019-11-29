@@ -1,8 +1,5 @@
 #include "Controlador.h"
 //ESCRITURA DE ARCHIVOS
-#include <iostream>
-#include <fstream>
-
 //Creamo y leemos el archivo
 
 
