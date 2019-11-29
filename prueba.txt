@@ -1,8 +1,8 @@
-3
-4,5
-2,4
-5,4
-1, Ingreso , 3,5 , Discos
-2, Retiro , 1,3 , Libros
-3, Ingreso , 2,2 , Lapices
-1, Retiro , 3,1, Libros
+El robot: 2 se dirige a la posicion :
+Fila : 2
+Columna : 5
+Accion: Ingreso de 4 Libros
+El robot: 3 se dirige a la posicion :
+Fila : 4
+Columna : 2
+Accion: Retiro de 1 Libro

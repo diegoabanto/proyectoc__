@@ -38,3 +38,17 @@ cmake-build-debug/prueba.txt
 CMakeLists.txt
 CMakeLists.txt
 CMakeLists.txt
+.idea/misc.xml
+.idea/modules.xml
+.idea/proyectoc__.iml
+cmake-build-debug/cmake_install.cmake
+cmake-build-debug/CMakeCache.txt
+cmake-build-debug/CMakeFiles/3.14.5/CMakeCCompiler.cmake
+cmake-build-debug/CMakeFiles/3.14.5/CMakeCXXCompiler.cmake
+cmake-build-debug/CMakeFiles/3.14.5/CMakeDetermineCompilerABI_C.bin
+cmake-build-debug/CMakeFiles/3.14.5/CMakeDetermineCompilerABI_CXX.bin
+cmake-build-debug/CMakeFiles/3.14.5/CMakeRCCompiler.cmake
+cmake-build-debug/CMakeFiles/3.14.5/CMakeSystem.cmake
+cmake-build-debug/CMakeFiles/3.14.5/CompilerIdC/a.exe
+cmake-build-debug/CMakeFiles/3.14.5/CompilerIdC/CMakeCCompilerId.c
+cmake-build-debug/CMakeFiles/3.14.5/CompilerIdCXX/a.exe

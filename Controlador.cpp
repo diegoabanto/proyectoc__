@@ -30,8 +30,8 @@ normal Controlador::input_instrucciones(std::istream &in, std::ostream& out){
     out << endl << "Numero de instrucciones: ";
     in >> n;
     ofstream archivo_escribir;
-
-    archivo_escribir.open("prueba.txt");
+    //Se tiene que especificar la ruta exacta
+    archivo_escribir.open("C://Users/Lucero Navarro/Documents/GitHub/proyectoc__/prueba.txt");
     for (int i=0; i<n; i++){
         // Declarar variables a utilizar
         int num_robot, destino_fila, destino_col, cantidad;
